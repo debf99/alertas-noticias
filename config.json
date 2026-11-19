@@ -1,0 +1,43 @@
+{
+  "_ayuda": "Cada canal es una combinación región + categoría. 'umbral' = cuántos medios distintos deben publicar el mismo hecho para que llegue un aviso. 'busqueda' es lo que se busca en Google Noticias.",
+  "horas_ventana": 12,
+  "similitud_minima": 0.34,
+  "regiones": {
+    "arequipa": {
+      "nombre": "Arequipa",
+      "umbral": 2,
+      "categorias": {
+        "politica": "Arequipa (\"gobierno regional\" OR gobernador OR alcalde OR municipalidad OR consejo OR congresista)",
+        "economia": "Arequipa (economía OR minería OR minera OR inversión OR empleo OR agro OR exportación OR obra OR presupuesto)",
+        "deporte":  "Arequipa (Melgar OR fútbol OR deporte OR campeonato OR \"Copa Perú\")",
+        "policial": "Arequipa (policía OR PNP OR asesinato OR robo OR accidente OR detenido OR fiscalía OR extorsión)"
+      }
+    },
+    "peru": {
+      "nombre": "Perú",
+      "umbral": 3,
+      "categorias": {
+        "politica": "Perú (Congreso OR presidente OR \"Palacio de Gobierno\" OR ministro OR premier OR JNE OR partido OR vacancia)",
+        "economia": "Perú (BCRP OR economía OR inflación OR \"tipo de cambio\" OR PBI OR MEF OR minería OR inversión)",
+        "deporte":  "(\"selección peruana\" OR \"Liga 1\" OR Universitario OR \"Alianza Lima\" OR \"Sporting Cristal\" OR Perú deporte)",
+        "policial": "Perú (PNP OR policía OR crimen OR extorsión OR sicariato OR fiscalía OR detenidos OR asesinato)"
+      }
+    },
+    "internacional": {
+      "nombre": "Internacional",
+      "umbral": 3,
+      "categorias": {
+        "politica": "(elecciones OR presidente OR gobierno OR guerra OR ONU OR Casa Blanca OR cumbre) -Perú",
+        "economia": "(\"economía mundial\" OR \"Reserva Federal\" OR mercados OR Wall Street OR cobre OR petróleo OR aranceles) -Perú",
+        "deporte":  "(\"Champions League\" OR Mundial OR \"Copa Libertadores\" OR NBA OR tenis OR \"Fórmula 1\") -Perú",
+        "policial": "(atentado OR tiroteo OR narcotráfico OR ataque OR secuestro OR terrorismo) -Perú"
+      }
+    }
+  },
+  "nombres_categorias": {
+    "politica": "Política",
+    "economia": "Economía",
+    "deporte": "Deporte",
+    "policial": "Policial"
+  }
+}
